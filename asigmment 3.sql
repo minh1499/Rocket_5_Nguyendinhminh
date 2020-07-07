@@ -188,7 +188,7 @@ WHERE
     DepartmentID = 2;
     
     
-     /*cau11 */
+     /*Cau 11 */
     SELECT 
     FullName
 FROM
