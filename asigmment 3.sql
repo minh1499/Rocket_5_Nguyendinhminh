@@ -95,16 +95,16 @@ INSERT INTO Answer (Content,QuestionID,isCorrect) VALUES ('Demo',1,'Correct'),
 ('Demo',9,'Wrong'),
 ('Demo',10,'Correct');
 
-INSERT INTO Exam (Codee,Title,CategoryID,Duration,CreatorID,CreateDate) VALUES (1,'Demo 1 chut',1,'2020-07-01 9:00:00',10,'2020-05-20'),
-(1,'Demo',2,'2020-07-01 9:00:00',10,'2020-05-19'),
-(1,'Demo',4,'2020-07-01 9:00:00',10,'2020-05-20'),
-(2,'Demo',7,'2020-07-02 14:00:00',10,'2020-05-21'),
-(2,'Demo',3,'2020-07-02 14:00:00',10,'2020-05-22'),
-(1,'Demo',3,'2020-07-01 9:00:00',10,'2020-05-23'),
-(3,'Demo',4,'2020-07-05 9:00:00',10,'2020-06-24'),
-(3,'Demo',8,'2020-07-05 9:00:00',10,'2020-06-25'),
-(1,'Demo',6,'2020-07-01 9:00:00',10,'2020-06-26'),
-(2,'Demo',1,'2020-07-03 9:00:00',10,'2020-05-27');
+INSERT INTO Exam (Codee,Title,CategoryID,Duration,CreatorID,CreateDate) VALUES (1,'Demo 1 chut',1,'2:00:00',10,'2020-05-20'),
+(1,'Demo',2,'3:00:00',10,'2020-05-19'),
+(1,'Demo',4,'4:00:00',10,'2020-05-20'),
+(2,'Demo',7,'5:00:00',10,'2020-05-21'),
+(2,'Demo',3,'6:00:00',10,'2020-05-22'),
+(1,'Demo',3,'7:00:00',10,'2020-05-23'),
+(3,'Demo',4,'8:00:00',10,'2020-06-24'),
+(3,'Demo',8,'9:00:00',10,'2020-06-25'),
+(1,'Demo',6,'10:00:00',10,'2020-06-26'),
+(2,'Demo',1,'11:00:00',10,'2020-05-27');
 
 INSERT INTO ExamQuestion VALUES (1,1),
 (1,4),
@@ -137,8 +137,8 @@ SELECT
 FROM
     `Account`
 WHERE
-    FullName = (SELECT 
-            MAX(FullName)
+    length(FullName) = (SELECT 
+            MAX(length(FullName))
         FROM
             `Account`);
 
@@ -176,8 +176,9 @@ SELECT
 FROM
     Exam
 WHERE
-    CreateDate < '2019-12-20';
-    /* duration */
+    CreateDate > '2019-12-20'
+    and 
+    duration >'1:00:00';
     
     /*cau10*/
     SELECT 
