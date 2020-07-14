@@ -54,7 +54,7 @@ CREATE OR REPLACE VIEW bai4 AS
             JOIN `account` a ON d.departmentid = a.departmentid
             GROUP BY d.departmentid) AS a);
             
-/* Tạo view có chứa tất các các câu hỏi do user họ Nguyễn tạo */
+/* Tạo view có chứa tất các các câu hỏi do user họ Nguyễn tạo a */
 CREATE OR REPLACE VIEW bai5 AS
     SELECT 
         fullname, questionid
