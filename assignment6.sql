@@ -75,17 +75,18 @@ where groupname like '%a%';
 select username
 from `account`
 where username like '%a%';
-
+use testingsystem;
+drop procedure q6
 delimiter $$
 create procedure q6(chuoinhap varchar(30))
 begin
 select GroupName
 from `Group`
-where groupname like '% chuoinhap %';
+where groupname like concat ('%',chuoinhap,'%');
 
 select username
 from `account`
-where username like '%chuoinhap%';
+where username like concat ('%',chuoinhap,'%');
 
 end $$
 delimiter ;

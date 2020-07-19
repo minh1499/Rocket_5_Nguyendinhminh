@@ -35,6 +35,7 @@ where length(content)>=30;
 
 select questionid from bai3;
 
+
 /* Tạo view có chứa danh sách các phòng ban có nhiều nhân viên nhất */
 CREATE OR REPLACE VIEW bai4 AS
     SELECT 
