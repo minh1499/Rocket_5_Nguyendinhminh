@@ -1,0 +1,164 @@
+		// ex1
+		
+		//q1
+		if (account2.departmentId == null)
+		{System.out.println("nhan vien nay da co phong ban");}
+		else
+			System.out.println("phong ban cua nhan vien nay la " + account2.departmentId.departmentName);
+		
+		
+		//q2
+		if (account2.positionId.length == 0)
+		{System.out.println("nhan vien nay chua co group");
+		}else if (account2.positionId.length == 1)
+		{System.out.println("Group của nhân viên này là Java Fresher, C# Fresher");
+		}else if (account2.positionId.length == 2)
+		{System.out.println("Group của nhân viên này là Java Fresher, C# Fresher");
+		}else if (account2.positionId.length == 3)
+		{System.out.println("nguoi quan trong");
+		}else 
+			System.out.println("nhan vien nay la nguoi hong chuyen");
+	
+		//q5
+		Account[] accountOfGroup1 = {account1,account3};
+		group1.accountOfGroup= accountOfGroup1;
+		int x = group1.accountOfGroup.length;
+		switch (x) {
+		case 1: System.out.println("nhom co 1 nguoi");
+				break;
+		case 2: System.out.println("nhom co 2 nguoi");
+				break;
+		case 3: System.out.println("nhom co 3 nguoi");
+				break;
+		default:	
+				System.out.println("khac");
+				break;
+		
+		}
+		
+		//q6
+		
+		int y= account2.positionId.length;
+		
+		switch (y) {
+		case 0: System.out.println("nhan vien nay chua co group");
+				break;
+		case 1:System.out.println("Group của nhân viên này là Java Fresher, C# Fresher");
+				break;
+		case 2:System.out.println("Group của nhân viên này là Java Fresher, C# Fresher");
+		break;
+		default: System.out.println("khac");
+		        break;
+		}
+		
+		//q8
+		
+		Account[] accounts = { account1, account2, account3 };
+		for (Account account : accounts) {
+			System.out.println("Email: " + account.email);
+			System.out.println("FullName: " + account.fullName);
+			System.out.println("Name Department: " + account.departmentId.departmentName);
+		}
+		
+		//q9
+		Position[] position= {position1,position2,position3};
+		for (Position a : position) {
+			System.out.println("id " + a.positionID);
+			System.out.println("name " + a.positionName);
+		}
+			
+		//q10
+		for (int i = 0; i < accounts.length; i++) {
+			System.out.println("Thông tin account thứ " + (i + 1) + " là :");
+			System.out.println("Email: " + accounts[i].email);
+			System.out.println("Fullname: " + accounts[i].fullName);
+			System.out.println("Department: " + accounts[i].departmentId.departmentName);
+		}
+		
+		//q11
+		for (int i=0;i< position.length;i++) {
+			System.out.println("thong tin position thu"+(i+1)+"la: ");
+			System.out.println("id: "+position[i].positionID);
+			System.out.println("name: "+position[i].positionName);
+		}
+
+		//q12
+		
+		//q13 
+		for (int i = 0; i < accounts.length; i++) {
+			if (i==1) {
+				continue;
+			}
+			System.out.println("Thông tin account thứ " + (i + 1) + " là :");
+			System.out.println("Email: " + accounts[i].email);
+			System.out.println("Fullname: " + accounts[i].fullName);
+			System.out.println("Department: " + accounts[i].departmentId.departmentName);
+		}
+		
+		System.out.println("            ");
+		
+		//q14
+		
+		for (int i = 0; i < accounts.length; i++) {
+			if (accounts[i].accountId<3) {
+				
+			
+			System.out.println("Thông tin account thứ " + (i+1 ) + " là :");
+			System.out.println("Email: " + accounts[i].email);
+			System.out.println("Fullname: " + accounts[i].fullName);
+			System.out.println("Department: " + accounts[i].departmentId.departmentName);
+			}
+			
+	}
+		
+		//q15
+		for (int i=0;i<=20;i++) {
+			if(i%2==1) {
+				continue;
+			}
+			System.out.println(i);
+		}
+		
+		//q16
+//		int i = 0;
+//		while (i < accounts.length) {
+//			System.out.println("Thông tin account thứ " + (i + 1) + " là :");
+//			System.out.println("Email: " + accounts[i].email);
+//			System.out.println("Fullname: " + accounts[i].fullName);
+//			System.out.println("Department: " + accounts[i].departmentId.departmentName);
+//			i++;
+//		}
+		
+		System.out.println("            ");
+		int i=0;
+		while (i < accounts.length) {
+			if (i!=1) {
+				System.out.println("Thông tin account thứ " + (i + 1) + " là :");
+				System.out.println("Email: " + accounts[i].email);
+				System.out.println("Fullname: " + accounts[i].fullName);
+				System.out.println("Department: " + accounts[i].departmentId.departmentName);
+			}
+			i++;
+		}
+		
+		
+		while (i<=20) {
+			if(i%2==0) {
+				System.out.println(i);
+			}
+			i++;
+		}
+		
+		System.out.println("aaaaaaaaaa");
+		
+		while (i < accounts.length) {
+			if (accounts[i].accountId >= 3) {
+				i++;
+				continue;
+			}
+			System.out.println("Thông tin account thứ " + (i + 1) + " là :");
+			System.out.println("Email: " + accounts[i].email);
+			System.out.println("Fullname: " + accounts[i].fullName);
+			System.out.println("Department: " + accounts[i].departmentId.departmentName);
+			i++;
+	}

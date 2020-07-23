@@ -1,0 +1,26 @@
+//		ex5
+////		q1
+//		Scanner scanner = new Scanner (System.in);
+//		System.out.println("moi ban nhap 3 so nguyen: ");
+//		int a =scanner.nextInt();
+//		int b =scanner.nextInt();
+//		int c =scanner.nextInt();
+//		System.out.println("so vua nhap la " + a + "|" + b  + "|" + c );
+//		
+		Scanner close;
+	      
+////		q2
+		Scanner scanner = new Scanner (System.in);
+//		System.out.printf("moi ban nhap 2 so thuc: %n ");
+//		Float d =scanner2.nextFloat();
+//		Float e =scanner2.nextFloat();
+//		System.out.println("so vua nhap la " + d + "|" + e  );
+//		
+		Scanner close1;
+	      
+//		q3
+		System.out.println("Moi ban nhap vao ho");
+		String s1 = scanner.next();
+		System.out.println("Moi ban nhap vao ten");
+		String s2 = scanner.next();
+		System.out.println("Ten ban da nhap: " + s1 + " " + s2 + "\n");
