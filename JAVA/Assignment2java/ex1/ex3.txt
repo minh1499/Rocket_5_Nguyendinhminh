@@ -1,0 +1,23 @@
+		//ex3
+		
+		//q1
+		
+		
+		//q2
+		@SuppressWarnings("unused")
+		Exam[] exams = {exam1,exam2,exam3};
+		System.out.println("exam thu 1");
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("YYYY-MM-dd HH-mm-ss");
+	      System.out.println(formatter.format(exam1.creatorDate)); 
+	      
+	    //q3
+	      System.out.println("exam 2");
+	      DateTimeFormatter formatterr = DateTimeFormatter.ofPattern("YYYY");
+	      System.out.println(formatterr.format(exam2.creatorDate)); 
+	      
+		//q4
+	      System.out.println("exam 2");
+	      DateTimeFormatter formatterrr = DateTimeFormatter.ofPattern("YYYY-MM");
+	      System.out.println(formatterrr.format(exam2.creatorDate)); 
+	      
+	     //q5 tuong tu
