@@ -158,13 +158,13 @@ public class ex4 {
 		int n=scanner.nextInt();
 		char[] b=a.toCharArray();
 		if(b.length%n==0) {
-			String[] words=a.split(null,(b.length/n));
-			for(int i=0;i<(b.length/n);i++){
-				System.out.print(words[i]+" ");
+			for(int i=0;i<b.length;i=i+n){
+//				System.out.println(a.substring);
 			}
 		}else {
 			System.out.println("khong chia duoc");
 		}
+		
 	
 		
 	}
