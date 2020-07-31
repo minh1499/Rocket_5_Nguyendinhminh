@@ -43,6 +43,7 @@ public class VietnamesePhone extends Phone {
 		boolean test = false;
 		for(int i = 0; i<super.getContacts().size(); i++) {
 			if(super.getContacts().get(i).contains(name)) {
+				System.out.println(super.getContacts().get(i));
 				test = true;
 			}
 		}

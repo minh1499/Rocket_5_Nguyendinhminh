@@ -20,6 +20,7 @@ public class Main {
 		sdt.inthongtin();
 		sdt.updateContact("huy", "789");
 		sdt.inthongtin();
+		sdt.searchContact("huy");
 		
 	}
 
